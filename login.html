@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login page</title>
+    <link href="smart_cart.css" rel="stylesheet" type="text/css" />
+    
+</head>
+<body>
+
+    <nav id="navbar">
+		<div class="container">
+			<ul>
+				<li><a href="index.html">Home</a></li>
+				<li><a href="about.html">About</a></li>
+				<li><a href="login.html">Login</a></li>
+				<li><a href="contact.html">Contact</a></li>
+			</ul>
+		</div>
+	</nav>
+   
+    <br>
+    <div class="loginbox">
+        <br>
+        <img src="uiImg/cartoon.png" class="cartoon">
+            <h1>Login Here</h1>
+                <form>
+                    <p>Username</p>
+                    <input type="uname" placeholder="Username" id="inputtext1" />
+                    <p>Password</p>
+                    <input type="pass" placeholder="Password" id="inputtext2" />
+                    <input type="button" value="Login"  onclick="javascript:verify()" />
+                    <a href="#">Forget password</a><br>
+                    <a href="#">Dont have an account</a>
+                
+                </form> 
+    </div>
+
+    <section id="showcase"></section>
+
+    <h5>Username and Password is hakam</h5>
+
+    <div class ="banner">
+        <section id="main"><img src="uiImg/aiti.jpg" alt="..." height="50" width="200"></section>
+
+        <aside>
+            <img src="uiImg/bibd.jpg" alt="..." height="50" width="100">
+            <img src="uiImg/recap.jpg" alt="..." height="50" width="100">
+            <img src="uiImg/CBN1.png" alt="..." height="50" width="100">          
+        </aside>
+    </div>
+
+
+    <footer id="main-footer">
+        <p>Pod H5 &copy; 2021 Application</p>
+    </footer>
+    
+</body>
+</html>
+
+<style>
+    
+
+
+    body{
+        margin: 0;
+        padding: 0;
+       
+        background-image: linear-gradient(to right, lightblue , silver);
+        background-size: cover;
+        background-position: center;
+        font-family: sans-serif;
+        text-align: center;
+        
+
+    }
+
+    #showcase{
+	
+	background-position:center right;
+	min-height:300px;
+	margin-bottom:30px;
+	text-align: center;
+    }
+
+    #main{
+        float:left;
+        width:80%;
+        padding:0 30px;
+        box-sizing: border-box;
+    }
+
+
+    .banner{
+ 
+        position:absolute;
+        margin-top: 190px;
+        width:100%;
+        
+        text-align: left;
+
+        }
+    #main-footer{
+         
+         position:absolute;
+         /* bottom:0; */
+         width:100%;
+        margin-top: 300px;
+         
+         }
+ 
+  
+
+    .loginbox{
+        width: 320px;
+        height: 420px;
+        background: blue;
+        color: #fff;
+        top: 50%;
+        left: 50%;
+        position: absolute;
+        transform: translate(-50%,-50%);
+        box-sizing: border-box;
+        padding: 70px 30px;
+    }
+
+    .cartoon{
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+        position: absolute;
+        top: -50px;
+        left: calc(50% - 50px);
+
+
+    }
+
+    h1{
+        margin: 0;
+        padding: 0 0 20px;
+        text-align: center;
+        font-size: 22px;
+    }
+
+    .loginbox p{
+        margin: 0;
+        padding: 0;
+        font-weight: bold;
+
+    }
+
+    .loginbox input{
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .loginbox input[type="uname"], input[type="pass"]
+    {
+        border: none;
+        border-bottom: 1px solid #fff;
+        background: transparent;
+        outline: none;
+        height: 40px;
+        color: #fff;
+        font-size: 16px;
+    }
+
+    .loginbox input[type="button"]
+    {
+        border: none;
+        outline: none;
+        height: 40px;
+        background: #fb2525;
+        color: #fff;
+        font-size: 18px;
+        border-radius: 20px;
+    }
+
+    .loginbox input[type="submit"]:hover
+    {
+        cursor: pointer;
+        background: #ffc107;
+        color: #000;
+
+    }
+
+    .loginbox a{
+        text-decoration: none;
+        font-size: 12px;
+        line-height: 20px;
+        color: darkgrey;
+    }
+
+    .loginbox a:hover{
+        color: #ffc107;
+
+    }
+
+
+    
+#navbar{
+	background-image: linear-gradient(lightslategray, white);
+	color:#fff;
+    border: 1px solid blue;
+}
+
+#navbar ul{
+	padding:0;
+	list-style: none;
+}
+
+#navbar li{
+	display:inline;
+}
+
+#navbar a{
+	color:#fff;
+	text-decoration: none;
+	font-size:18px;
+	padding-right:15px;
+} 
+
+@media only screen and (max-width:550px){
+
+    .banner{
+ 
+ position:absolute;
+ margin-top: 120px;
+ width:100%;
+
+}
+    #main-footer{
+         
+         position:absolute;
+         /* bottom:0; */
+         width:100%;
+        margin-top: 250px;
+         
+         }
+
+}
+
+
+</style>
+
+<script>
+
+function verify()
+{
+    if(   document.getElementById("inputtext1").value == "hakam"
+       && document.getElementById("inputtext2").value == "hakam" )
+    {
+        
+        location.href="index.html";
+    }
+    else
+    {
+        alert( "validation failed" );
+        
+    }
+}
+
+</script>

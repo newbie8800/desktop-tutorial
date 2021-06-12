@@ -1,0 +1,245 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script type="text/javascript" src="trade.js"></script>
+  
+
+
+    <link href="smart_cart.css" rel="stylesheet" type="text/css" />
+</head>
+
+
+<body onload="myFunctionload()">
+
+
+    <nav id="navbar">
+		<div class="container">
+			<ul>
+				<li><a href="index.html">Home</a></li>
+				<li><a href="about.html">About</a></li>
+				<li><a href="login.html">Login</a></li>
+				<li><a href="contact.html">Contact</a></li>
+			</ul>
+		</div>
+	</nav>
+
+    <header id="main-header">
+		<div class="container">
+			<h1>Order <p>Confirmation</p></h1>
+		</div>
+	</header>
+
+    <h2 id="h2Str">Textarea:  <span id="result-textarea"/></h2>
+
+
+
+    
+                    <div class="container">
+
+                        <section id="main">
+
+                            <!-- <form id="contact-form" method="post" action="https://formsubmit.co/hakam286@gmail.com"></form> -->
+                            <!-- <form action="registration.php" id="my-form" method="post">  -->
+                                <form action="https://formsubmit.co/hakam286@gmail.com" id="my-form" method="post"> 
+                                <input type="hidden" name="_next" value="https://newbie8800.github.io/desktop-tutorial/tq.html">
+                                <input type="hidden" name="_captcha" value="false">       
+                                First name: <input type="text" name="fname" class="inputf1" required/><br />
+                                Last name: <input type="text" name="lname"  class="inputf2" required/><br />
+                                Adrress: &nbsp; &nbsp;&nbsp;<input type="text" name="address"  class="inputf3"  required/><br />
+                                Contact: &nbsp; &nbsp;&nbsp;<input type="text" name="contact"  class="inputf4"  required/><br />
+                                
+                                <br>
+
+                                <textarea readonly rows="10" id="myTextarea" cols="60" name="textarea" required></textarea>
+                            
+                            
+                                <br>
+                                <br>
+                            
+                                <button id="btn6" type="submit" name="submit" value="Register" onclick="myFunction()">Confirm</button> 
+                            </form>
+                                
+                           
+                        </section>
+    
+                        <aside id="sidebar">
+
+                            <p>All of this is just assuming</p>
+                            <br>
+                            <p><h4>Employee</h4></p>
+                            <br>
+                            <img src="uiImg/employee.jpg" alt="..." height="100" width="100">
+                            <p>
+
+                        </aside>
+
+                    </div>
+
+                    
+                  
+
+<br>
+
+
+<section id="showcase">
+    <div class="container">
+        <h3>For verification plz text/call 123456 for assistance and you may bank-in while calling,  we will surely get ur order once confirm and verify you. We will do our very best in serving you.</h3>
+        <h3>Untuk pengesahan sila hubungi / hubungi 123456 untuk mendapatkan bantuan, kami pasti akan mendapat pesanan anda setelah pengesahan anda. Kami akan melakukan tugas dengan terbaik.</h3>
+    </div>
+</section>
+
+<br>
+
+
+                    <div class ="banner">
+                        <section id="main"><img src="uiImg/aiti.jpg" alt="..." height="50" width="200"></section>
+            
+                        <aside>
+                            <img src="uiImg/bibd.jpg" alt="..." height="50" width="100">
+                            <img src="uiImg/recap.jpg" alt="..." height="50" width="100">
+                            <img src="uiImg/CBN1.png" alt="..." height="50" width="100">          
+                        </aside>
+                    </div>
+                
+            
+                    <footer id="main-footer">
+                        <p>Pod H5 &copy; 2021 Application</p>
+                    </footer>
+
+</body>
+
+
+
+</html>
+
+
+
+
+<style>
+
+.inputf1,.inputf2,.inputf3,.inputf4{
+width: 600px;
+}
+
+
+h1 { 
+    display: block;
+    font-size: 2em;
+    margin-top: 0.67em;
+    margin-bottom: 0.67em;
+    margin-left: 0;
+    margin-right: 0;
+    font-weight: bold;
+}
+
+/* #main{
+	float:left;
+	width:70%;
+	padding:0 30px;
+	box-sizing: border-box;
+} */
+
+
+
+#showcase{
+	
+	background-position:center right;
+	min-height:300px;
+	margin-bottom:30px;
+	text-align: center;
+}
+
+.container{
+	width:100%;
+	margin:auto;
+	overflow:hidden;
+}
+
+
+@media only screen and (max-width:550px){
+
+    .inputf1,.inputf2,.inputf3,.inputf4{
+    width: 234px;
+    }
+
+	#main{
+		width:100%;
+		float:none;
+	}
+
+	#sidebar{
+        margin-top: 15px;
+		width:100%;
+		float:none;
+	}
+
+
+
+    textarea {
+
+        box-sizing: border-box;
+        max-width: 100%;
+    
+        box-shadow: inset 0px 0px 10px 5px lightblue;
+    
+    }
+	
+}
+
+    
+</style>
+
+
+
+<script>
+
+var editStr = new String();
+
+
+
+
+
+
+function myFunctionload() {
+
+editStr =  document.getElementById("h2Str").innerHTML 
+editStr = editStr.replace("Textarea:  ", "");
+editStr = editStr.replace("span id=", "");
+editStr = editStr.replace("<", "");
+editStr = editStr.replace("\"", "");
+editStr = editStr.replace("result-textarea", "");
+editStr = editStr.replace(">", "");
+editStr = editStr.replace("\"", "");
+editStr = editStr.replace("</span>", "");
+
+//console.log("cmmon now " + editStr)
+
+tryStr = editStr
+
+document.getElementById("myTextarea").value = tryStr ;
+
+
+
+
+
+}
+
+
+
+function myFunction() {
+console.log("is click")
+}
+
+</script>
+
+
+
+
+
+

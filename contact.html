@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="smart_cart.css" rel="stylesheet" type="text/css" />
+    <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">  -->
+    <title>Contsct form</title>
+</head>
+<body>
+
+    <nav id="navbar">
+		<div class="container">
+			<ul>
+				<li><a href="index.html">Home</a></li>
+				<li><a href="about.html">About</a></li>
+				<li><a href="login.html">Login</a></li>
+				<li><a href="contact.html">Contact</a></li>
+			</ul>
+		</div>
+	</nav>
+
+
+        <div class="contact-title">
+            <h3 class="h3class">Grocery Shopping Online</h3>
+
+        </div>
+
+        <div class="contact-form">
+
+            <form id="contact-form" method="post" action="https://formsubmit.co/hakam286@gmail.com">
+                <input type="hidden" name="_captcha" value="false">
+                <input name="name" type="text" class="form-control" placeholder="Your Name" required>
+                <br>
+                <input name="email" type="email" class="form-control" placeholder="Your Email" required>
+                <br>
+
+                <textarea name ="message" class="form-control" placeholder="Message" row="4" required></textarea><br>
+
+                <input type="submit" class="form-control submit" value="SEND MESSAGE">
+
+            </form>
+        </div>
+
+
+        <div class ="banner">
+            <section id="main"><img src="uiImg/aiti.jpg" alt="..." height="50" width="200"></section>
+
+            <aside>
+                <img src="uiImg/bibd.jpg" alt="..." height="50" width="100">
+                <img src="uiImg/recap.jpg" alt="..." height="50" width="100">
+                <img src="uiImg/CBN1.png" alt="..." height="50" width="100">
+            </aside>
+        </div>
+
+
+        <footer id="main-footer">
+            <p>Pod H5 &copy; 2021 Application</p>
+        </footer>
+
+</body>
+</html>
+
+<style>
+
+
+
+    body{
+        margin:0;
+        padding: 0;
+        text-align: center;
+        background-image: linear-gradient(to right, lightblue , silver);
+        background-size: cover;
+        background-position: center;
+        font-family: sans-serif;
+    }
+
+
+
+     #main{
+        float:left;
+        width:70%;
+        padding:0 30px;
+        box-sizing: border-box;
+    }
+
+    #main-footer{
+
+        position:absolute;
+        /* bottom:0; */
+        margin-top: 210px;
+        width:100%;
+        }
+
+    .banner{
+
+        position:absolute;
+        margin-top: 140px;
+        width:100%;
+
+    }
+
+    .contact-tittle{
+        margin-top: 100px;
+        color: #fff;
+        text-transform: uppercase;
+        transition:  all 4s ease-in-out;
+
+    }
+
+    .contact-title h1{
+        font-size: 32px;
+        line-height: 10px;
+    }
+
+    .contact-title h2{
+        font-size: 16px;
+    }
+
+    form{
+        margin-top: 50px;
+        transition: all 4s ease-in-out;
+    }
+
+    .form-control{
+        width: 600px;
+        background: transparent;
+        border: none;
+        outline: none;
+        border-bottom: 1px solid gray;
+        color: #fff;
+        font-size: 18px;
+        margin-bottom: 16px;
+    }
+
+input{
+    height: 45px;
+}
+
+form .submit{
+
+    text-align: center;
+    background: green;
+    border-color: transparent;
+    color: #fff;
+    font-size: 20px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    height: 50px;
+    margin-top: 20px;
+    height: 50px;
+    margin-top: 20px;
+
+
+}
+
+form .submit:hover{
+    background-color: lightgreen;
+    cursor: pointer;
+}
+
+
+#navbar{
+	background-image: linear-gradient(lightslategray, white);
+	color:#fff;
+  border: 1px solid blue;
+}
+
+#navbar ul{
+	padding:0;
+	list-style: none;
+}
+
+#navbar li{
+	display:inline;
+}
+
+#navbar a{
+	color:#fff;
+	text-decoration: none;
+	font-size:18px;
+	padding-right:15px;
+}
+
+@media only screen and (max-width:550px){
+
+
+    .h3class{
+        margin: 0;
+        /* padding: 0 0 20px; */
+        text-align: center;
+        font-size: 25px;
+
+    }
+
+    #main-footer{
+
+         position:absolute;
+         margin-top: 250;
+         width:100%;
+         }
+
+
+         form .submit{
+
+        text-align: center;
+        background: green;
+        border-color: transparent;
+        color: #fff;
+        font-size: 20px;
+        font-weight: bold;
+        letter-spacing: 2px;
+        height: 50px;
+        margin-top: 20px;
+        width: 100%;
+        
+
+
+        }
+
+
+
+
+}
+
+
+
+</style>
