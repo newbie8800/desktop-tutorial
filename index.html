@@ -21,18 +21,22 @@
 </head>
 <body>
 
+    
 
     <nav id="navbar">
 		<div class="container">
 			<ul>
-				<li><a href="http://www.google.com">Home</a></li>
-				<li><a href="#">About</a></li>
-				<li><a href="#">Services</a></li>
-				<li><a href="#">Contact</a></li>
+				<li><a href="index.html">Home</a></li>
+				<li><a href="about.html">About</a></li>
+				<li><a href="login.html">Login</a></li>
+				<li><a href="contact.html">Contact</a></li>
+                
 			</ul>
 		</div>
 	</nav>
     
+  
+
 
     <!-- <h1>Product</h1> -->
     <section class="container">
@@ -41,13 +45,11 @@
 
             <div class="col-md-8">
                 <div class="panel panel-default">
-                    <div class="panel-heading">
-                        Welcome
-                    </div>
+                    <div class="panel-heading">Welcome to Grocery Online Shopping</div>
                     <div class="panel-body">
                         <div class="row">
 
-                         
+                            
                            
                             <div id="myBtnContainer1">
                                 <button class="btn1" id="huahoid" onclick="myBtnFunction1('Huaho')">Huaho</button>
@@ -163,7 +165,7 @@
                             <button class="srhbtn" type="button" id="bntSrh7" onclick="mySearFunctionlw('all7')">search</button>
                            
                             <p id="textdisp"></p>
-
+                            
                     
                                           <!-- BEGIN PRODUCTS -->
                                          <!-- 1 = huaho vegetable-->
@@ -171,7 +173,7 @@
                             <div class="column Vegetable1 lettuce1">
                                 <div class="content">
                                     
-
+                                    
                                       
                                         <div class="col-md-4 col-sm-6">
                                             <div class="sc-product-item thumbnail">
@@ -1398,22 +1400,30 @@
                 </div>
                 
             </div>
+
+            
+           
+
+            
+
+          
             
             <aside class="col-md-4">
                 
+                <div id="tocart"> </div>
                 <div id="smartcart"></div> 
    
-                
+               
                 
                 <form action="trade.html" id="my-form" method="GET"> 
                   
                  <form>
                               
-                <textarea readonly  rows="10" id="myTextarea" cols="60" name="textarea" required></textarea>
+                <textarea readonly  rows="10" id="myTextarea" cols="60" name="textarea"></textarea>
                  
                 </form>
                 <button type="submit" id= "btn4" form="my-form" value="Submit">Check-Out</button>
-               
+                
                 
 
 
@@ -1428,14 +1438,17 @@
 
      
        
-        
+      
        
 
     </section>
 
 
- 
-   
+  
+
+      <a class="movetocart button" href="#tocart">cart</a>
+
+    <button onclick="topFunction()" id="myBtnTop" title="Go to top">Top</button>
 
   
 </body>
@@ -2316,6 +2329,25 @@ btsrVarskh.style.display = "none";
 
 srVarlw.style.display = "block";
 btsrVarlw.style.display = "block";
+}
+
+
+
+var mybutton = document.getElementById("myBtnTop");
+
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    mybutton.style.display = "block";
+  } else {
+    mybutton.style.display = "none";
+  }
+}
+
+function topFunction() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
 }
 
 
